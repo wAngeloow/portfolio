@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #16181D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Logo*/
+header .nome {
+    margin-left: 150px;
+    font-family: "Bebas Neue", serif;
+}
+
+#angelo {
+    position: absolute;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#gabriel {
+    position: relative;
+    color: #3788C6;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 33px;
+}
+
+/*Navegação*/
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-right: 150px;
+}
+
+header div i {
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    font-size: 18px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #A7ABB4;
+}
+
+.icones {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.globo {
+    position: relative;
+}
+
+.idiomas {
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 5px;
+    list-style-type: none;
+    width: 63px;
+    cursor: pointer;
+}
+
+.idiomas li {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.idiomas a:hover {
+    color: #3788C6;
+}
+
+/* Mostrar a lista de idiomas ao passar o mouse */
+.globo:hover .idiomas {
+    display: block;
+}
+
+/*Sobre mim*/
+.sessao-sobre {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-mim {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    background: #292C34;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foto {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.informacoes {
+    margin-left: 20px;
+}
+
+.nome-verificado {
+    display: flex;
+    gap: 5px;
+}
+
+.nome-verificado p {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Icone verificado*/
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-container i.fa-check {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 11px;
+    color: white;
+}
+
+.icon-container i.fa-certificate {
+    color: #3788C6;
+}
+
+/*Minha profissão*/
+.profissao {
+    width: 190px;
+    height: 18px;
+    color: #A7ABB4;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*Um breve texto sobre mim*/
+.texto-sobre {
+    width: 535px;
+    height: auto;
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+/*Tecnologias que domino*/
+.tecnologias {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #A7ABB4;
+}
+
+/* Botões */
+.btn-sobre {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-contato {
+    width: 150px;
+    height: 48.286px;
+    border-radius: 20px;
+    border: 1px solid #292C34;
+    background: #D9D9D9;
+}
+
+.btn-contato a {
+    color: #292C34;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 48px;
+}
+
+.btn-download-cv {
+    width: 150px;
+    height: 48.286px;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: #292C34;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-download-cv a {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 48px;
+}
+
+.btn-sobre button {
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+.btn-sobre button:hover {
+    background-color: #3788C6;
+}
+
+/*Top 3 melhores*/
+.sessao-top {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo h1 {
+    color: #3788C6;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.linha {
+    width: 500px;
+    height: 1px;
+    background: #FFF;
+}
+
+/*3 projetos*/
+.top-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.top-1, .top-2, .top-3 {
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.top-2 {
+    width: 350px;
+    height: 350px;
+}
+
+.top-1,
+.top-3 {
+    width: 300px;
+    height: 300px;
+}
+
+/* Efeito de escala ao passar o mouse */
+.top-1:hover,
+.top-2:hover,
+.top-3:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Estilos para o texto */
+.top-1 figcaption,
+.top-2 figcaption,
+.top-3 figcaption {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    z-index: 2;
+    opacity: 0;
+    transform: rotate(360deg) scale(0);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+/* Mostrar texto ao passar o mouse */
+.top-1:hover figcaption,
+.top-2:hover figcaption,
+.top-3:hover figcaption {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/*Projetos*/
+.sessao-projetos {
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.photo {
+    position: relative;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efeito de escala ao passar o mouse */
+.photo:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Estilos para o texto dentro da imagem */
+.photo figcaption {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    z-index: 2;
+    opacity: 0;
+    transform: rotate(360deg) scale(0);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+/* Mostrar texto ao passar o mouse */
+.photo:hover figcaption {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/*Contato*/
+.sessao-contato {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h2 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.titulo p {
+    color: #A7ABB4;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bloco {
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    background: #292C34;
+    margin-top: 15px;
+}
+
+.logo-nome {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.logo-nome i {
+    color: #A7ABB4;
+    font-size: 25px;
+}
+
+.logo-nome p {
+    color: #A7ABB4;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info a {
+    margin-right: 15px;
+}
+
+.fa-arrow-up-right-from-square {
+    font-size: 25px;
+    color: #3788C6;
+}
+
+footer {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px;
+}
+
+/*Botão de subir a página*/
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3788C6;
+    color: #16181D;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: 0.4s ease-in-out;
+    z-index: 100;
+}
+
+.scroll-top-btn:hover {
+    color: #FFF;
+    transition: 0.4s ease-in-out;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Modal*/
+.modal {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.bloco-modal {
+    width: 1000px;
+    height: 450px;
+    border-radius: 10px;
+    border: 1px solid #3788C6;
+    background: #292C34;
+}
+
+/*Foto do Modal*/
+.foto-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto-modal img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.formato-modal {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Infomações do Modal*/
+.info-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome-projeto {
+    color: #3788C6;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.descricao-projeto {
+    width: 441px;
+    height: 126px;
+    color: #A7ABB4;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.info-titulo {
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.linha-modal {
+    width: 214px;
+    height: 1px;
+    background: #3788C6;
+    margin-top: 5px;
+}
+
+/*Botões modal*/
+.btn-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.btn-modal a {
+    width: 71.953px;
+    height: 23.61px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn-modal i {
+    color: #3788C6;
+}
+
+.close {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+
+.btn-close {
+    color: #3788C6;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Responsivo*/
+@media(min-width: 280px) and (max-width: 1050px){
+    /*Header*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .nome {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+
+    /*Linha*/
+    .linha {
+        width: 350px;
+        margin-top: 10px;
+    }
+
+    /*Sessão sobre*/
+    .sessao-sobre {
+        margin-top: 30px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .foto {
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .informacoes {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profissao{
+        width: 100%;
+        text-align: center;
+    }
+
+    .texto-sobre {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .tecnologias {
+        display: flex;
+        gap: 15px;
+    }
+
+    .btn-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-contato,
+    .btn-download-cv {
+        width: 250px;
+    }
+
+    /*Sessão top-projetos*/
+    .sessao-top {
+        margin-top: 50px;
+    }
+
+    .top-projetos {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .top-2{
+        width: 300px;
+        height: 300px;
+    }
+
+    /*Sessão projetos*/
+    .sessao-projetos {
+        margin-top: 560px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 330px);
+        gap: 20px;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .titulo h2 {
+        margin-top: 5px;
+    }
+
+    .titulo p {
+        width: 350px;
+        text-align: center;
+    }
+
+    /*Sessão contato*/
+    .sessao-contato{
+        margin-top: 50px;
+    }
+
+    .bloco {
+        width: 350px;
+    }
+    /*Modal*/
+    .bloco-modal {
+        width: 90%;
+        height: auto;
+    }
+
+    .foto-modal{
+        margin-bottom: 20px;
+    }
+
+    .foto-modal img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .formato-modal{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-modal{
+        text-align: center;
+    }
+
+    .info-modal p{
+        width: 50%;
+    }
+
+    .descricao-projeto{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .descricao-projeto p{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .btn-modal{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
