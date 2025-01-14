@@ -35,10 +35,10 @@ function abrirModal(projetoId) {
         },
         {
             title: { pt: 'POMODORO' },
-            description: { pt: 'Sistema baseado na técnica de estudo Pomodoro, que divide o tempo de estudo em intervalos de 25 minutos de foco seguidos por uma pausa de 5 minutos. O objetivo é otimizar a produtividade e manter o foco durante o estudo. O usuário também pode configurar o tempo das sessões de estudo, pausa e até mesmo o cronômetro para tarefas específicas, tudo ajustável a partir de um botão de configurações.' + '\n\n' + 'HTML, CSS, JavaScript' },
+            description: { pt: 'Projeto responsivo desenvolvido com o objetivo de ajudar as pessoas a manter o foco por mais tempo. Ele exibe o tempo restante no título da página, permitindo que o usuário acompanhe o timer enquanto navega em outras abas. Quando o tempo acaba, um som é tocado para avisar o usuário. Além disso, todos os timers podem ser personalizados conforme a necessidade do usuário, oferecendo mais flexibilidade na organização do tempo.' + '\n\n' + 'HTML, CSS, JavaScript' },
             image: 'img/pomodoro.png',
-            deploy: '',
-            github: '',
+            deploy: 'https://wangeloow.github.io/pomodoro/',
+            github: 'https://github.com/wAngeloow/pomodoro',
             figma: 'https://www.figma.com/design/FvJBkMgB2Nhq7Ln6j4bxAr/Pomodoro?node-id=0-1&t=nEA1dbmKlQE8A0jM-1'
         },
         {
@@ -59,10 +59,18 @@ function abrirModal(projetoId) {
         },
         {
             title: { pt: 'GALLERY' },
-            description: { pt: 'Galeria de imagens responsiva que exibe uma coleção de heróis, com foco em personagens que o usuário aprecia. A galeria foi projetada para se adaptar a diferentes dispositivos, garantindo uma experiência visual otimizada em qualquer tamanho de tela.' + '\n\n' + 'HTML, CSS' },
+            description: { pt: 'Galeria de imagens responsiva que exibe uma coleção de heróis. A galeria foi projetada para se adaptar a diferentes dispositivos, garantindo uma experiência visual otimizada em qualquer tamanho de tela.' + '\n\n' + 'HTML, CSS' },
             image: 'img/gallery.png',
             deploy: 'https://wangeloow.github.io/gallery/',
             github: 'https://github.com/wAngeloow/gallery',
+            figma: ''
+        },
+        {
+            title: { pt: 'CRONÔMETRO' },
+            description: { pt: 'Este projeto é um cronômetro interativo e responsivo, que funciona em diferentes dispositivos. Ele permite adicionar marcas de tempo enquanto está em funcionamento, e exibe um alerta caso o usuário tente adicionar uma marca com o cronômetro parado. Além disso, oferece a opção de resetar o cronômetro a qualquer momento.' + '\n\n' + 'HTML, CSS, JavaScript' },
+            image: 'img/cronometro.png',
+            deploy: 'https://wangeloow.github.io/cronometro/',
+            github: 'https://github.com/wAngeloow/cronometro',
             figma: ''
         },
     ];
