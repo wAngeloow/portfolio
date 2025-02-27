@@ -73,6 +73,14 @@ function abrirModal(projetoId) {
             github: 'https://github.com/wAngeloow/cronometro',
             figma: ''
         },
+        {
+            title: { pt: 'E-COMMERCE DE CROCHÊ' },
+            description: { pt: 'Este projeto é um e-commerce de crochê com design responsivo e navegação dinâmica, onde os produtos mudam conforme a categoria escolhida. Conta com um catálogo interativo, FAQ, contato direto via WhatsApp e uma página inicial que exibe imagens das categorias.' + '\n\n' + 'HTML, CSS, Bootstrap, JavaScript' },
+            image: 'img/croche.png',
+            deploy: 'https://wangeloow.github.io/croche/',
+            github: 'https://github.com/wAngeloow/croche',
+            figma: 'https://www.figma.com/design/0XdkV2OtfiKNn05tSNj51g/Croch%C3%AA?node-id=0-1&t=1eZaJDQswUZUzmcj-1'
+        },
     ];
 
     const projeto = projetos[projetoId];
