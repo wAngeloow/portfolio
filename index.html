@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Angelo">
+    <link rel="icon" href="img/address-book-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Angelo Gabriel</title>
+
+</head>
+
+<body>
+
+    <!--Navegação-->
+    <header>
+        <div class="nome">
+            <h1 id="angelo">ANGELO</h1>
+            <h2 id="gabriel">GABRIEL</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Sessão sobre mim-->
+    <section class="sessao-sobre" id="sobre">
+        <div class="sobre-mim">
+            <div class="foto">
+                <img src="img/foto.png" alt="">
+            </div>
+
+            <div class="informacoes">
+                <div class="nome-verificado">
+                    <p>ANGELO GABRIEL</p>
+                    <span class="icon-container">
+                        <i class="fa-solid fa-certificate"></i>
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                </div>
+                <div class="profissao">
+                    <p>Desenvolvedor Front-End</p>
+                </div>
+                <div class="texto-sobre">
+                    <p> Sou entusiasta da tecnologia, apaixonado por transformar ideias em realidade.
+                        Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e adquirindo experiência
+                        em desenvolvimento web front-end.</p>
+                    <p> Trabalho com a criação de sites do zero, desde o design no Figma até o desenvolvimento com HTML,
+                        CSS e JavaScript.
+                    </p>
+                    <p> Meu foco é criar experiências web atraentes e funcionais, combinando design criativo com código
+                        eficiente para entregar soluções que atendam às necessidades dos usuários.</p>
+                </div>
+                <div class="tecnologias">
+                    <i class="fa-brands fa-html5" style="color: #E5532D;" title="HTML"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #4B6AB2;" title="CSS"></i>
+                    <i class="fa-brands fa-js" style="color: #F7E025;" title="JavaScript"></i>
+                    <i class="fa-brands fa-bootstrap" style="color: #8812FC;" title="Bootstrap"></i>
+                    <i class="fa-brands fa-figma" title="Figma"></i>
+                    <i class="fa-brands fa-github" style="color: #fff;" title="GitHub"></i>
+                    <i class="fa-brands fa-git" style="color: #F15538;" title="Git"></i>
+                </div>
+                <div class="btn-sobre">
+                    <button class="btn-contato">
+                        <a href="#contato">Entre em contato</a>
+                    </button>
+                    <button class="btn-download-cv">
+                        <a href="arquivos/Currículo - Angelo Gabriel B. D..pdf" target="_blank">Download CV</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão dos melhores projetos-->
+    <section class="sessao-top" id="projetos">
+        <div class="titulo">
+            <h1>TOP 3 PROJETOS</h1>
+            <div class="linha"></div>
+        </div>
+
+        <div class="top-projetos">
+            <div class="top-1"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-burguerito.png"
+                    alt="Burguerito" data-id="0">
+                <figcaption>BURGUERITO</figcaption>
+            </div>
+
+            <div class="top-2"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-pomodoro.png"
+                    alt="Pomodoro" data-id="1">
+                <figcaption>POMODORO</figcaption>
+            </div>
+
+            <div class="top-3"
+            data-aos="flip-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-to-do-list.png"
+                    alt="To-do List" data-id="2">
+                <figcaption>TO DO LIST</figcaption>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão dos projetos-->
+    <section class="sessao-projetos" id="projetos">
+        <div class="titulo">
+            <h1>PROJETOS</h1>
+            <div class="linha"></div>
+        </div>
+
+        <div class="container">
+
+            <div class="photo project" data-id="3"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-calculadora-imc.png"
+                    alt="Calculadora de IMC">
+                <figcaption>CALCULADORA DE IMC</figcaption>
+            </div>
+            <div class="photo project" data-id="5"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-cronometro.png"
+                    alt="Projeto 6">
+                <figcaption>CRONÔMETRO</figcaption>
+            </div>
+            <div class="photo project" data-id="4"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-gallery.png"
+                    alt="Gallery">
+                <figcaption>GALLERY</figcaption>
+            </div>
+            <div class="photo project" data-id="6"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-croche.png"
+                    alt="Projeto 7">
+                <figcaption>E-COMMERCE DE CROCHÊ</figcaption>
+            </div>
+            <div class="photo project" data-id="7"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-barbearia.png"
+                    alt="Projeto 8">
+                <figcaption>BARBEARIA</figcaption>
+            </div>
+            <div class="photo project" data-id="8"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="img/capa-em-breve.png"
+                    alt="Projeto 9">
+                <figcaption>EM BREVE</figcaption>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão de contato-->
+    <section class="sessao-contato" id="contato">
+        <div class="titulo">
+            <h1>CONTATO</h1>
+            <h2>Gostou do meu trabalho?</h2>
+            <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+        </div>
+
+        <div class="bloco">
+            <div class="info">
+                <div class="logo-nome">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </div>
+                <a href="https://www.linkedin.com/in/angelodonada/" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="info">
+                <div class="logo-nome">
+                    <i class="fa-brands fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+                <a href="https://github.com/wAngeloow" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="info">
+                <div class="logo-nome">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Email</p>
+                </div>
+                <a href="mailto:angelodonada@gmail.com" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>Copyright © | Angelo Gabriel</footer>
+
+    <!--Seta que rola para cima-->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <!-- Modal -->
+    <section class="modal" id="modal">
+        <div class="bloco-modal">
+
+            <!--Botão de fechar modal-->
+            <div class="close">
+                <button class="btn-close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </div>
+
+            <div class="formato-modal">
+                <!-- Fotos -->
+                <div class="foto-modal">
+                    <img id="modal-img" src="" alt="Foto do Projeto">
+                </div>
+
+                <!-- Informações -->
+                <div class="info-modal">
+
+                    <!--Nome do projeto-->
+                    <div class="nome-projeto">
+                        <h1 id="modal-title">NOME DO PROJETO</h1>
+                    </div>
+
+                    <!--Descrição do projeto-->
+                    <div class="descricao-projeto">
+                        <p id="modal-description">Descrição do projeto...</p>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="btn-modal">
+                        <a id="modal-deploy" href="" target="_blank" title="Visualizar site">
+                            <i class="fa-solid fa-eye"></i> Visualizar
+                        </a>
+                        <a id="modal-github" href="" target="_blank" title="Diretório do código">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a id="modal-figma" href="" target="_blank" title="Design do site">
+                            <i class="fa-brands fa-figma"></i> Figma
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
