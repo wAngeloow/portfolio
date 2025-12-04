@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --color-principal: #009989;
+    --color-white: #fff; 
+    --color-black: black; 
+    --color-dark: #212529; 
+    --color-dark-secondary: #292C34;
+    --color-gray-light: #A7ABB4; 
+    --color-card-project: #D9D9D9; 
+    --color-data-project: #56585E;
+    --color-btn: #ffae00;
+    --color-btn-hover: #fcbc32;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+i{
+    cursor: pointer;
+}
+
+h1, h2{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/*Linha*/
+.linha{
+    background: var(--color-white);
+    height: 1px;
+    width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .linha{
+        background: var(--color-white);
+        height: 1px;
+        width: 350px;
+    }
+}
+
+/*HEADER*/
+#angelo{
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+#gabriel{
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color-principal);
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+nav div a{
+    color: var(--color-gray-light);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*INFORMAÇÕES*/
+.img-info{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 15px 15px 0px var(--color-principal);
+}
+
+.nome{
+    color: var(--color-white);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.profissao{
+    color: var(--color-principal);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.descricao{
+    color: var(--color-gray-light);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+    .descricao{
+        width: 500px;
+    }
+}
+
+/*Estilo padrão dos botões*/
+.custom-btn {
+    position: relative;
+    text-align: center;
+    width: 245px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+/* Estilo personalizado dos botões" */
+.btn-contato{
+    border-radius: 10px;
+    background: var(--color-gray-light);
+    color: var(--color-black);
+}
+
+.btn-contato a{
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn-cv {
+    border: solid 1px var(--color-white);
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.btn-cv a{
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Efeito dos botões*/
+.btn-contato:after, .btn-cv:after {
+    background-color: var(--color-principal); 
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1), 4px 4px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-contato:hover:after, .btn-cv:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+/*PROJETOS*/
+.titulo-projeto{
+    color: var(--color-principal);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*Imagem*/
+.img-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*Hover da imagem*/
+.zoom-message {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-white);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+    pointer-events: none; 
+}
+
+.img-container:hover .zoom-message {
+    opacity: 1;
+    visibility: visible; 
+    transition: opacity 0.5s ease-in-out, visibility 0s;
+}
+
+.img-projeto {
+    background: var(--color-dark);
+    width: 350px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Modal zoom */
+.modal-zoom {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-img {
+    max-width: 90%;
+    max-height: 80%;
+    transition: transform 0.25s ease;
+}
+
+.close-zoom {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*Card do projeto*/
+.card-projeto{
+    background: var(--color-card-project);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nome-projeto{
+    color: var(--color-principal);
+    font-size: 24px;
+}
+
+.data-projeto{
+    color: var(--color-data-project);
+    font-size: 15px;
+}
+
+.btn-ver-mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 67px;
+    background: var(--color-btn);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 700;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-ver-mais:hover{
+    background-color: var(--color-btn-hover);
+    transition: ease-in-out 0.3s;
+}
+
+/*Popover personalizado*/
+.popover {
+    width: 300px;
+}
+
+.popover .popover-body {
+    max-width: 350px;
+    height: auto;
+}
+
+.desc{
+    max-width: 350px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/*Modal informações*/
+.modal-info a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.modal-info i{
+    color: var(--color-principal);
+    font-size: 15px;
+}
+
+/*CONTATO*/
+.card-contato{
+    height: 70px;
+    width: 400px;
+    background: var(--color-dark-secondary);
+    border-radius: 10px;
+}
+
+.card-contato p{
+    color: var(--color-gray-light);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-contato i{
+    font-size: 25px;
+}
+
+.contato-icon{
+    color: var(--color-gray-light);
+    cursor: initial;
+}
+
+.fa-arrow-up-right-from-square{
+    color: var(--color-principal);
+}
+
+/*FOOTER*/
+footer{
+    position: relative;
+    background-color: var(--color-dark-secondary);
+    width: 100%;
+    height: 100px;
+}
+
+.copyright{
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.circle{
+    position: absolute;
+    top: -50%;
+    background-color: var(--color-dark-secondary);
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer p{
+    padding: 25px;
+    z-index: 999;
+}
+
+.back-top{
+    position: absolute;
+    color: var(--color-white);
+    top: 15%;
+}
