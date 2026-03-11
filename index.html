@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#010B2F">
+
+    <!--Primary Meta Tags-->
+    <title>Portfólio - Angelo Donada</title>
+    <meta name="description"
+        content="Portfólio de Angelo Donada. Desenvolvedor Web e UI/UX Designer especializado em transformar ideias em experiências digitais completas com HTML, Tailwind CSS e JavaScript.">
+    <link rel="canonical" href="https://wangeloow.github.io/portfolio/">
+    <meta name="author" content="Angelo Donada">
+    <meta name="robots" content="index, follow">
+
+    <!--Open Graph Meta Tags-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wangeloow.github.io/portfolio/">
+    <meta property="og:title" content="Portfólio - Angelo Donada">
+    <meta property="og:description"
+        content="Confira meus projetos de destaque e experiências em desenvolvimento web e design de interfaces.">
+    <meta property="og:image" content="https://angelodonada.com/assets/img/common/og-image.png">
+    <meta property="og:image:alt" content="Preview do Portfólio de Angelo Donada">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+
+    <!--Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfólio - Angelo Donada">
+    <meta name="twitter:description"
+        content="Desenvolvedor Web e UI/UX Designer focado em transformar ideias em código e design.">
+    <meta name="twitter:image" content="https://angelodonada.com/assets/img/common/og-image.png">
+
+    <!--Favicons e App Icons-->
+    <link rel="icon" href="assets/img/common/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/common/apple-touch-icon.png">
+
+    <!--Compiled Tailwind CSS-->
+    <link href="assets/css/output.css" rel="stylesheet">
+
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--Google Fonts (Poppins)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Schema-->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Angelo Donada",
+  "jobTitle": "Desenvolvedor Web e UI/UX Designer",
+  "url": "https://wangeloow.github.io/portfolio/",
+  "description": "Desenvolvedor Web e UI/UX Designer focado em transformar ideias em experiências digitais completas através de design e código.",
+  "sameAs": [
+    "https://github.com/wAngeloow",
+    "https://www.linkedin.com/in/angelodonada/"
+  ]
+}
+</script>
+
+</head>
+
+<body class="font-poppins bg-primary">
+
+    <!--Start of header-->
+    <header class="relative flex justify-center w-full h-screen overflow-hidden bg-primary">
+
+        <!--Mobile menu toggle button-->
+        <button class="absolute z-50 left-[30px] top-[30px] md:hidden xl:left-[50px] xl:top-[50px]"
+            aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">
+
+            <i id="menu-icon" class="fa-solid fa-bars cursor-pointer text-[20px] text-white" aria-hidden="true">
+            </i>
+
+        </button>
+
+        <!--Sidebar navigation-->
+        <nav id="sidebar"
+            class="absolute z-40 top-0 left-[-90px] flex flex-col items-center justify-center w-[90px] h-screen bg-primary transition-all duration-300 md:left-0 md:bg-transparent"
+            aria-label="Navegação lateral">
+
+            <ul class="flex items-center justify-center gap-[10px] whitespace-nowrap -rotate-90">
+
+                <li>
+                    <a href="#contato"
+                        class="group relative text-[14px] uppercase text-white transition-all duration-300 hover:text-accent">
+
+                        Contato
+
+                        <span
+                            class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:left-0 group-hover:w-full">
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class="block w-[50px] h-[1px] bg-white" aria-hidden="true"></li>
+
+                <li>
+                    <a href="#projetos"
+                        class="group relative text-[14px] uppercase text-white transition-all duration-300 hover:text-accent">
+
+                        Projetos
+
+                        <span
+                            class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:left-0 group-hover:w-full">
+                        </span>
+
+                    </a>
+                </li>
+
+                <li class="block w-[50px] h-[1px] bg-white" aria-hidden="true"></li>
+
+                <li>
+                    <a href="#sobre-mim"
+                        class="group relative text-[14px] uppercase text-white transition-all duration-300 hover:text-accent">
+
+                        Sobre mim
+
+                        <span
+                            class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:left-0 group-hover:w-full">
+                        </span>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!--Overlay-->
+        <div id="overlay-menu" class="fixed z-30 top-0 left-0 w-full h-screen bg-black/50 hidden">
+        </div>
+
+        <!--Contact button-->
+        <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer"
+            aria-label="Conversar no WhatsApp" class="absolute z-50 top-[30px] right-[30px] overflow-hidden text-[14px]
+        md:flex md:gap-[5px] md:rounded-full md:bg-white md:px-[15px] md:py-[10px] md:font-semibold
+        xl:top-[50px] xl:right-[50px]
+
+        after:absolute after:left-0 after:top-0 after:w-0 after:h-full after:bg-accent after:transition-all after:duration-300
+        hover:after:w-full">
+
+            <p class="relative z-10 hidden transition-colors duration-300 md:flex">
+                Conversar
+            </p>
+
+            <i class="fa-solid fa-comment-dots relative z-10 animate-soft-pulse text-[20px] text-white transition-colors duration-300 md:text-primary"
+                aria-hidden="true">
+            </i>
+
+        </a>
+
+        <!--Intro text-->
+        <div class="relative flex items-center justify-center">
+
+            <span class="pointer-events-none absolute select-none text-[70px] font-black uppercase text-accent opacity-[0.02]
+            md:text-[130px] lg:text-[160px] xl:text-[250px]" aria-hidden="true">
+
+                Angelo
+
+            </span>
+
+            <div class="text-center">
+
+                <p class="text-[16px] font-semibold uppercase text-accent md:text-[24px] xl:text-[32px]">
+                    Bem-vindo ao meu
+                </p>
+
+                <h1 class="text-[40px] font-extrabold uppercase text-gradient-radial md:text-[68px] xl:text-[96px]">
+                    Portfólio
+                </h1>
+
+            </div>
+
+        </div>
+
+        <!--Scroll indicator-->
+        <div class="pointer-events-none absolute flex flex-col items-center gap-[10px] bottom-[20px] right-[20px]
+        xl:bottom-[50px] xl:right-[50px]" aria-hidden="true">
+
+            <div class="w-[2px] h-[100px] bg-white animate-float-vertical"></div>
+
+            <div class="flex flex-col gap-[10px]">
+
+                <i class="fa-solid fa-play rotate-90 text-white animate-float-horizontal animation-delay-300"></i>
+                <i class="fa-solid fa-play rotate-90 text-white animate-float-horizontal animation-delay-500"></i>
+
+            </div>
+
+        </div>
+
+        <!--Decorative background glow-->
+        <div class="pointer-events-none absolute z-[1] bottom-[-125px] w-[250px] h-[250px] rounded-full bg-accent blur-[250px]
+
+        md:bottom-[-200px] md:w-[400px] md:h-[400px] md:blur-[400px]
+
+        xl:bottom-[-300px] xl:w-[500px] xl:h-[500px] xl:blur-[500px]">
+        </div>
+
+    </header>
+    <!--End of header-->
+
+    <!--Start of main-->
+    <main class="flex flex-col py-[30px] gap-[30px] xl:py-[50px] xl:gap-[50px]">
+
+        <!--Start of about me-->
+        <section id="sobre-mim" aria-labelledby="about-title"
+            class="flex flex-col items-center justify-center bg-primary gap-[30px] xl:gap-[50px]">
+
+            <!--Section title-->
+            <h2 id="about-title"
+                class="text-center text-[50px] font-black uppercase text-accent opacity-[15%] md:text-[68px] xl:text-[100px]">
+                Sobre mim
+            </h2>
+
+            <div class="flex flex-col items-center justify-center gap-[15px] xl:flex-row">
+
+                <div class="flex flex-col gap-[15px]">
+
+                    <!--About me card-->
+                    <article
+                        class="flex flex-col gap-[10px] w-[350px] rounded-[15px] bg-primary-700 px-[30px] py-[30px] md:w-[668px] xl:w-[778px] xl:px-[50px] xl:py-[50px]">
+
+                        <h3 class="text-[16px] font-semibold text-white">
+                            Sobre mim
+                        </h3>
+
+                        <p class="text-[14px] text-justify text-white">
+                            Olá, me chamo Angelo e atuo como desenvolvedor web e UI/UX Designer, unindo a lógica do
+                            código à estética do design.
+                            Transformo ideias em experiências digitais completas, do protótipo no Figma ao código final.
+                            Com experiência prática em HTML, CSS e JavaScript, além de frameworks como Bootstrap e
+                            Tailwind CSS,
+                            utilizo minha expertise em marketing digital e no ecossistema Google (Analytics e Search
+                            Console)
+                            para garantir projetos visualmente incríveis e otimizados para SEO.
+                        </p>
+
+                    </article>
+
+                    <div class="flex gap-[15px]">
+
+                        <!--Education-->
+                        <article class="flex gap-[15px] w-[350px] rounded-[15px] bg-primary-700 px-[30px] py-[30px]
+                    md:w-[343px]
+                    xl:w-[423px] xl:px-[50px] xl:py-[50px]">
+
+                            <!--Progress-->
+                            <div class="flex flex-col items-center">
+
+                                <div class="flex items-center justify-center w-[30px] h-[30px] rounded-full bg-white">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+
+                                <div class="w-[1px] h-[39px] bg-white"></div>
+                                <div class="w-[4px] h-[4px] rounded-full bg-white"></div>
+                                <div class="w-[1px] h-[45px] bg-white"></div>
+                                <div class="w-[4px] h-[4px] rounded-full bg-white"></div>
+
+                            </div>
+
+                            <!--Content-->
+                            <div class="flex flex-col gap-[15px]">
+
+                                <h3 class="text-[16px] font-semibold text-white">
+                                    Educação
+                                </h3>
+
+                                <div class="flex flex-col gap-[10px] w-[226px] xl:w-[278px]">
+
+                                    <div>
+                                        <h4 class="text-[14px] text-white">
+                                            Análise e
+                                            <span class="md:hidden">Desen.</span>
+                                            <span class="hidden md:inline xl:hidden">Desenvol.</span>
+                                            <span class="hidden xl:inline">Desenvolvimento</span>
+                                            de Sistemas
+                                        </h4>
+
+                                        <p class="text-[12px] text-gray-400">
+                                            Uniasselvi | 2024 - 2026
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="text-[14px] text-white">
+                                            Desenvolvimento Web Full Stack
+                                        </h4>
+
+                                        <p class="text-[12px] text-gray-400">
+                                            Udemy | Em progresso
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!--Talk card-->
+                        <aside class="hidden flex-col gap-[20px] w-[310px] rounded-[15px] bg-primary-700 px-[30px] py-[30px]
+                    md:flex
+                    xl:w-[340px] xl:px-[50px] xl:py-[50px]">
+
+                            <div class="flex flex-col gap-[10px] w-[250px]">
+
+                                <h3 class="text-[16px] font-semibold text-white">
+                                    Vamos criar <span class="text-accent">juntos</span>?
+                                </h3>
+
+                                <p class="text-[14px] text-gray-400">
+                                    Design e código para transformar sua visão em realidade.
+                                </p>
+
+                            </div>
+
+                            <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer"
+                                aria-label="Iniciar conversa no WhatsApp" class="group relative flex items-center justify-center w-[140px] h-[35px]
+                        overflow-hidden rounded-[15px] border border-white
+                        text-[12px] font-semibold text-white
+                        transition-all duration-300
+                        after:absolute after:left-0 after:top-0 after:h-full after:w-0 after:bg-accent
+                        after:transition-all after:duration-300
+                        hover:border-accent hover:after:w-full">
+
+                                <span class="relative z-10 transition-colors duration-300">
+                                    Iniciar conversa
+                                </span>
+
+                            </a>
+
+                        </aside>
+
+                    </div>
+
+                    <!--Languages + Social + CV-->
+                    <div class="flex flex-col gap-[15px] md:flex-row">
+
+                        <!--Languages-->
+                        <article class="flex items-center justify-center gap-[10px] w-[350px] h-[130px]
+                    rounded-[15px] bg-primary-700 py-[50px]
+                    md:order-2 md:w-[246px]
+                    xl:w-[297px]">
+
+                            <h3 class="text-[16px] font-semibold text-white">
+                                Idiomas
+                            </h3>
+
+                            <span class="w-[1px] h-[26px] bg-gray-400"></span>
+
+                            <div class="flex gap-[10px]">
+
+                                <img src="assets/icons/brazil-flag.svg" alt="Português - Nativo" title="Nativo"
+                                    class="cursor-pointer md:w-[25px] md:h-[19px] xl:w-[30px] xl:h-[23px]">
+
+                                <img src="assets/icons/united-kingdom-flag.svg" alt="Inglês - Intermediário B2"
+                                    title="Intermediário - B2"
+                                    class="cursor-pointer md:w-[25px] md:h-[19px] xl:w-[30px] xl:h-[23px]">
+
+                                <img src="assets/icons/spain-flag.svg" alt="Espanhol - Básico A1" title="Básico - A1"
+                                    class="cursor-pointer md:w-[25px] md:h-[19px] xl:w-[30px] xl:h-[23px]">
+
+                            </div>
+
+                        </article>
+
+                        <!--Social Media-->
+                        <nav aria-label="Redes sociais" class="flex gap-[15.33px] md:flex-col md:gap-[10px] md:order-3">
+
+                            <ul class="flex gap-[15.33px] md:gap-[7px]">
+
+                                <li
+                                    class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
+                                    <a href="https://dribbble.com/angelo-donada" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Perfil no Dribbble"
+                                        class="flex items-center justify-center w-full h-full">
+
+                                        <i
+                                            class="fa-brands fa-dribbble text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
+
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
+                                    <a href="mailto:angelodonada@gmail.com" aria-label="Enviar email"
+                                        class="flex items-center justify-center w-full h-full">
+
+                                        <i
+                                            class="fa-regular fa-envelope text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="flex gap-[15.33px] md:gap-[7px]">
+
+                                <li
+                                    class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
+                                    <a href="https://github.com/wAngeloow" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Perfil no GitHub"
+                                        class="flex items-center justify-center w-full h-full">
+
+                                        <i
+                                            class="fa-brands fa-github text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
+
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
+                                    <a href="https://www.linkedin.com/in/angelodonada/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Perfil no LinkedIn"
+                                        class="flex items-center justify-center w-full h-full">
+
+                                        <i
+                                            class="fa-brands fa-linkedin-in text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </nav>
+
+                        <!--CV-->
+                        <a href="assets/pdf/curriculo-angelo-donada.pdf" target="_blank" rel="noopener noreferrer"
+                            class="relative flex items-center justify-center w-[350px] h-[130px]
+                    rounded-[15px] bg-primary-700 px-[50px] py-[50px]
+                    md:order-1 md:w-[263px] md:px-[30px]
+                    xl:w-[324px]">
+
+                            <p class="absolute text-[80px] font-black text-accent opacity-[5%]">
+                                CV
+                            </p>
+
+                            <div class="flex items-center gap-[5px]">
+
+                                <h3 class="text-[16px] font-semibold text-white">
+                                    Acesse meu currículo
+                                </h3>
+
+                                <i class="fa-solid fa-download text-[16px] text-accent"></i>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!--Tech carousel-->
+                <aside
+                    class="relative flex items-center overflow-hidden w-[350px] bg-primary-700 md:w-[668px] xl:flex-col xl:w-[70px] xl:h-[663px]">
+
+                    <span
+                        class="pointer-events-none absolute z-10 w-[70px] h-[70px] bg-gradient-to-r from-[#02081C] to-[#02081C]/0 xl:bg-gradient-to-b"></span>
+
+                    <ul class="flex items-center gap-[10px] flex-nowrap min-w-max xl:flex-col animate-scroll-x-reverse">
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/html.webp" alt="HTML">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/css.webp" alt="CSS">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/javascript.webp"
+                                alt="JavaScript">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/bootstrap.webp"
+                                alt="Bootstrap">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/tailwind.webp"
+                                alt="Tailwind CSS">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/mysql.webp"
+                                alt="MySQL">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/wordpress.webp"
+                                alt="WordPress">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/figma.webp"
+                                alt="Figma">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/github.webp"
+                                alt="GitHub">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/google-analytics.webp"
+                                alt="Google Analytics">
+                        </li>
+
+                        <li class="flex-shrink-0">
+                            <img class="w-[50px] h-[50px] rounded-[5px]" src="assets/img/carousel/google-ads.webp"
+                                alt="Google Ads">
+                        </li>
+
+                    </ul>
+
+                    <span
+                        class="pointer-events-none absolute z-10 bottom-0 right-0 w-[70px] h-[70px] bg-gradient-to-l from-[#02081C] to-[#02081C]/0 xl:bg-gradient-to-t"></span>
+
+                </aside>
+
+            </div>
+
+        </section>
+        <!--End of about me-->
+
+        <!--Start of projects-->
+        <section id="projetos" aria-labelledby="projects-title"
+            class="flex flex-col items-center justify-center gap-[30px] pb-[20px] bg-primary xl:gap-[50px]">
+
+            <!--Section title-->
+            <h2 id="projects-title"
+                class="text-center text-[50px] font-black uppercase text-accent opacity-[15%] md:text-[68px] xl:text-[100px]">
+                Projetos
+            </h2>
+
+            <!--Projects container-->
+            <div class="flex flex-col items-end gap-[15px]">
+
+                <!--Featured project-->
+                <article id="feature-project-container"
+                    class="flex flex-col justify-between h-[445px] w-[350px] rounded-[15px] bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8))] bg-cover bg-center px-[30px] md:h-[274px] md:w-[668px] xl:h-[348px] xl:w-[848px]">
+                </article>
+
+                <!--Other projects-->
+                <div class="flex flex-col gap-[15px] md:flex-row">
+
+                    <!--Left column-->
+                    <div id="left-column-projects" class="flex flex-col gap-[15px]">
+                    </div>
+
+                    <!--Right column-->
+                    <div id="right-column-projects" class="flex flex-col gap-[15px]">
+                    </div>
+
+                </div>
+
+                <!--Button-->
+                <a href="/pages/projetos.html" class="group flex items-center justify-center rounded-full bg-white
+            px-[12px] py-[6px]
+            text-[12px] font-semibold text-primary-700
+            transition-all duration-500
+            md:px-[16px] md:py-[8px] md:text-[14px]
+            xl:px-[20px] xl:py-[10px]
+            hover:bg-gray-100 hover:shadow-lg">
+
+                    Mais projetos
+
+                    <i class="fa-solid fa-arrow-right
+                opacity-0 max-w-0 -translate-x-2
+                transition-all duration-500 ease-in-out
+                group-hover:opacity-100 group-hover:max-w-[20px] group-hover:translate-x-2">
+                    </i>
+
+                </a>
+
+            </div>
+
+        </section>
+        <!--End of projects-->
+
+    </main>
+    <!--End of main-->
+
+    <!--Start of footer-->
+    <footer
+        class="flex flex-col items-center rounded-t-[30px] bg-primary-700 px-[30px] pt-[30px] md:rounded-t-[50px] md:px-[50px] md:pt-[50px] xl:pt-[100px]">
+
+        <!--Contact CTA-->
+        <section id="contato" class="mb-[30px] flex gap-[30px] md:mb-[50px] xl:mb-[100px] xl:gap-[100px]">
+
+            <figure class="hidden md:flex md:items-center">
+                <img src="assets/img/common/contact-bubble.webp" alt="" aria-hidden="true"
+                    class="h-[121px] w-[137px] xl:h-[154px] xl:w-[173px]">
+            </figure>
+
+            <div class="flex flex-col items-center justify-center gap-[20px] md:w-[441px] md:items-start">
+                <header class="text-center md:text-left">
+                    <h2 class="mb-[10px] text-[16px] font-semibold text-white">
+                        Pronto para começar?
+                    </h2>
+                    <p class="text-[14px] text-gray-400">
+                        Vamos transformar sua ideia em realidade. Estou pronto para
+                        liderar o desenvolvimento do zero ou integrar sua equipe
+                        para elevar o nível do seu próximo projeto.
+                    </p>
+                </header>
+                <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-full bg-white px-[20px] py-[10px] text-[14px] font-semibold text-primary-700 transition-all duration-300
+                after:absolute after:left-0 after:top-0 after:h-full after:w-0 after:bg-accent after:transition-all after:duration-300
+                hover:after:w-full">
+                    <span class="relative z-10 transition-colors duration-300">
+                        Enviar mensagem
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!--Footer Bottom-->
+        <div
+            class="flex w-full max-w-[1000px] items-center justify-center border-t border-gray-500 py-[20px] md:justify-between">
+
+            <p class="text-[12px] text-white">
+                © <span id="current-year"></span> | Todos os direitos reservados.
+            </p>
+
+            <nav class="hidden md:flex" aria-label="Redes sociais">
+                <ul class="flex gap-[10px]">
+                    <li
+                        class="group h-[30px] w-[30px] rounded-full bg-white transition-all duration-500 hover:scale-110">
+                        <a href="https://dribbble.com/angelo-donada" target="_blank" rel="noopener noreferrer"
+                            aria-label="Dribbble" class="flex h-full w-full items-center justify-center rounded-full">
+                            <i
+                                class="fa-brands fa-dribbble text-[15px] text-primary-700 transition-transform duration-500 group-hover:[transform:rotateY(360deg)]">
+                            </i>
+                        </a>
+                    </li>
+                    <li
+                        class="group h-[30px] w-[30px] rounded-full bg-white transition-all duration-500 hover:scale-110">
+                        <a href="mailto:angelodonada@gmail.com" aria-label="Enviar email"
+                            class="flex h-full w-full items-center justify-center rounded-full">
+                            <i
+                                class="fa-regular fa-envelope text-[15px] text-primary-700 transition-transform duration-500 group-hover:[transform:rotateY(360deg)]">
+                            </i>
+                        </a>
+                    </li>
+                    <li
+                        class="group h-[30px] w-[30px] rounded-full bg-white transition-all duration-500 hover:scale-110">
+                        <a href="https://github.com/wAngeloow" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" class="flex h-full w-full items-center justify-center rounded-full">
+                            <i
+                                class="fa-brands fa-github text-[15px] text-primary-700 transition-transform duration-500 group-hover:[transform:rotateY(360deg)]">
+                            </i>
+                        </a>
+                    </li>
+                    <li
+                        class="group h-[30px] w-[30px] rounded-full bg-white transition-all duration-500 hover:scale-110">
+                        <a href="https://www.linkedin.com/in/angelodonada/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn" class="flex h-full w-full items-center justify-center rounded-full">
+                            <i
+                                class="fa-brands fa-linkedin-in text-[15px] text-primary-700 transition-transform duration-500 group-hover:[transform:rotateY(360deg)]">
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!--End of footer-->
+
+    <!--Start of back-to-top-->
+    <button id="back-to-top"
+        class="fixed z-50 bottom-[30px] right-[30px] flex items-center justify-center h-[30px] w-[30px] cursor-pointer rounded-[3px] bg-accent text-white opacity-0 translate-y-[100px] transition-all duration-500 hover:scale-110">
+
+        <i class="fa-solid fa-angles-up text-[14px] text-white"></i>
+
+    </button>
+    <!--End of back-to-top-->
+
+    <!--Start of Modal-->
+    <div id="project-modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center px-4">
+
+        <!--Overlay-->
+        <div id="overlay-modal" class="absolute inset-0 bg-black/50">
+        </div>
+
+        <!--Card-->
+        <article role="dialog" aria-modal="true" aria-labelledby="modal-title"
+            class="relative z-10 flex w-[350px] flex-col gap-[25px] rounded-[15px] bg-primary-700 px-[25px] py-[25px] md:w-[650px] md:gap-[30px] md:px-[30px] md:py-[30px] xl:w-[848px]">
+
+            <!--Header-->
+            <header class="flex items-center justify-between">
+                <h2 id="modal-title" class="text-[14px] font-semibold text-white md:text-[16px]">
+                    Nome do projeto
+                </h2>
+                <button aria-label="Fechar modal" class="cursor-pointer text-[16px] text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+
+            <!--Project Image-->
+            <figure>
+                <img src="" alt=""
+                    class="h-[153px] w-[300px] rounded-[5px] md:h-[300px] md:w-[590px] xl:h-[402px] xl:w-[788px] object-cover">
+            </figure>
+
+            <!--Description-->
+            <p class="text-[12px] text-justify text-gray-400 md:text-[14px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis porttitor lorem ac convallis.
+                Aenean suscipit diam quis consequat volutpat. Integer eget metus consectetur odio maximus vestibulum at
+                et urna. Mauris malesuada libero nulla, id finibus massa pulvinar vel. Morbi cursus nisl sit amet nisi
+                maximus lacinia eget ac magna. Praesent nulla nibh, tincidunt id efficitur eu, accumsan in odio. Proin
+                suscipit magna ut posuere feugiat.
+            </p>
+
+            <!--Links-->
+            <nav aria-label="Links do projeto">
+                <ul class="flex gap-[10px]">
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[93px] items-center justify-center rounded-[15px]
+                               border border-white
+                               text-[10px] font-semibold text-white
+                               transition-all duration-700
+                               hover:bg-white hover:text-primary-700
+                               md:h-[35px] md:w-[190px] md:text-[12px]
+                               xl:w-[256px]">
+                            Figma
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[93px] items-center justify-center rounded-[15px]
+                               border border-white
+                               text-[10px] font-semibold text-white
+                               transition-all duration-700
+                               hover:bg-white hover:text-primary-700
+                               md:h-[35px] md:w-[190px] md:text-[12px]
+                               xl:w-[256px]">
+                            Repositório
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="relative flex h-[30px] w-[93px] items-center justify-center overflow-hidden rounded-[15px]
+                               bg-accent
+                               text-[10px] font-semibold text-white
+                               md:h-[35px] md:w-[190px] md:text-[12px]
+                               xl:w-[256px]
+                               after:absolute after:top-0 after:left-[-100%] after:h-full after:w-full
+                               after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent
+                               after:transition-all after:duration-700
+                               hover:after:left-[100%]">
+                            Deploy
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </div>
+    <!--End of Modal-->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+
+</html>

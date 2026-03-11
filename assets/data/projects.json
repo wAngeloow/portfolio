@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "nome": "Oxicombustível",
+    "descricao": "Página de vendas desenvolvida sob encomenda para a Fort Equipamentos, com foco na divulgação de sua linha de produtos de oxicombustível. O projeto funciona como uma landing page otimizada para campanhas de tráfego pago, facilitando o contato, a cotação e o processo comercial com o cliente.",
+    "imagens": {
+      "capa": "assets/img/works/oxicombustivel-capa.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/hZeuZHXAPCwWVugXEHfWE8/Fort-Equipamentos?node-id=1-918&t=7jyEs0uZFjBexruo-1",
+      "github": "https://github.com/wAngeloow/oxicombustivel",
+      "deploy": "https://fortequipamentos.com/oxicombustivel/"
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Corrente do bem",
+    "descricao": "O Corrente do Bem é um site que facilita a conexão entre doadores e pessoas em situação de vulnerabilidade. A plataforma permite encontrar pontos de coleta próximos, visualizar locais confiáveis para doação e até se candidatar como novo ponto de apoio, promovendo uma rede solidária e acessível. Todas as informações, locais, contatos e funcionalidades são reais, baseadas em dados coletados ao longo do desenvolvimento do projeto.",
+    "imagens": {
+      "capa": "assets/img/works/corrente-do-bem-capa.webp",
+      "mockup": "assets/img/works/corrente-do-bem-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/69cArpoFCQ2nx38Iace7Cu/Uniasselvi---Atividade-de-Extens%C3%A3o?node-id=0-1&t=grDU63LBQV5CGady-1",
+      "github": "https://github.com/wAngeloow/corrente-do-bem?tab=readme-ov-file",
+      "deploy": "https://wangeloow.github.io/corrente-do-bem/"
+    }
+  },
+  {
+    "id": 3,
+    "nome": "Pomodoro",
+    "descricao": "Este projeto é um Pomodoro projetado para ajudar na gestão do tempo de trabalho, estudo e descanso, ajudando o usuário a se manter focado por mais tempo.",
+    "imagens": {
+      "capa": "assets/img/works/pomodoro-capa.webp",
+      "mockup": "assets/img/works/pomodoro-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/FvJBkMgB2Nhq7Ln6j4bxAr/Pomodoro?node-id=3-62&t=AwIQeNQk3jsyHAU2-1",
+      "github": "https://github.com/wAngeloow/pomodoro",
+      "deploy": "https://wangeloow.github.io/pomodoro/"
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Blog",
+    "descricao": "",
+    "imagens": {
+      "capa": "assets/img/works/blog-capa.webp",
+      "mockup": "assets/img/works/blog-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/HCOCq14ogpQ551MrExF1Gh/Blog?node-id=2019-114&t=kcucFaSQ8dmwQw2h-1",
+      "github": "",
+      "deploy": ""
+    }
+  },
+  {
+    "id": 5,
+    "nome": "To-do list",
+    "descricao": "Sistema de lista de tarefas para ajudar a se organizar melhor.",
+    "imagens": {
+      "capa": "assets/img/works/to-do-list-capa.webp",
+      "mockup": "assets/img/works/to-do-list-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/jMLDmWsBFTw0Yfb9ynFH5b/Lista-de-Tarefas?node-id=37-23&t=FnNnrTuPqmzjg9yP-1",
+      "github": "https://github.com/wAngeloow/to-do-list",
+      "deploy": "https://wangeloow.github.io/to-do-list/"
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Coldplay",
+    "descricao": "Página institucional dedicada à banda Coldplay, apresentando biografia, integrantes, discografia interativa e agenda de eventos.",
+    "imagens": {
+      "capa": "assets/img/works/coldplay-capa.webp",
+      "mockup": "assets/img/works/coldplay-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/xzma0hvFQKIZ9Ix53cXbz8/Coldplay?node-id=2020-472&t=JefNR6IOwKD2kUIK-1",
+      "github": "https://github.com/wAngeloow/coldplay",
+      "deploy": "https://wangeloow.github.io/coldplay/"
+    }
+  },
+  {
+    "id": 7,
+    "nome": "Login",
+    "descricao": "",
+    "imagens": {
+      "capa": "assets/img/works/login-capa.webp",
+      "mockup": "assets/img/works/login-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/aG8yNZCvwBdvTkJIDVDv87/Login-Interface?node-id=2024-387&t=G8VmtUSrk51N17w9-1",
+      "github": "",
+      "deploy": ""
+    }
+  },
+  {
+    "id": 8,
+    "nome": "Newsletter",
+    "descricao": "",
+    "imagens": {
+      "capa": "assets/img/works/newsletter-capa.webp",
+      "mockup": "assets/img/works/newsletter-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/ec4HzCU5ZRk0yr1K3oRdQm/Newsletter?node-id=2008-226&t=XbXlA6XMAdLqSHIa-1",
+      "github": "",
+      "deploy": ""
+    }
+  },
+  {
+    "id": 9,
+    "nome": "Crochê",
+    "descricao": "Este é um site de e-commerce de crochê, onde são apresentados diversos tipos de crochês organizados em diferentes categorias. Vale ressaltar que todas as fotos, medidas e valores apresentados são totalmente fictícios, sendo utilizados exclusivamente para fins de portfolio e demonstração. Não são representações reais de produtos ou preços.",
+    "imagens": {
+      "capa": "assets/img/works/croche-capa.webp",
+      "mockup": "assets/img/works/croche-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/0XdkV2OtfiKNn05tSNj51g/Croch%C3%AA?node-id=0-1&t=TNrkQhfXaBI2iAoA-1",
+      "github": "https://github.com/wAngeloow/croche",
+      "deploy": "https://wangeloow.github.io/croche/"
+    }
+  },
+  {
+    "id": 10,
+    "nome": "Barber",
+    "descricao": "Este projeto foi desenvolvido para simular o site de uma barbearia fictícia, com o objetivo de mostrar minhas habilidades de desenvolvimento web. As imagens e nomes foram retirados do Google, sendo usados apenas para fins ilustrativos e não representando um negócio real. O foco principal é na criação de um site responsivo e dinâmico, adequado para portfólio.",
+    "imagens": {
+      "capa": "assets/img/works/barber-capa.webp",
+      "mockup": "assets/img/works/barber-mockup.webp"
+    },
+    "links": {
+      "figma": "https://www.figma.com/design/EZcTjcuZzG8A91zlI2lMSw/Barber?node-id=3-5&t=lYHh9cSLf6LUtQkU-1",
+      "github": "https://github.com/wAngeloow/barber",
+      "deploy": "https://wangeloow.github.io/barber/"
+    }
+  }
+]

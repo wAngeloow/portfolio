@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Bloquear pastas sensíveis ou privadas
+Disallow: /config/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /404.html
+Disallow: /404
+
+# Host e Sitemap
+Sitemap: https://wangeloow.github.io/portfolio/sitemap.xml

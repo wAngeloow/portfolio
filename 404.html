@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="theme-color" content="#010B2F">
+
+    <!--Primary meta tags-->
+    <title>404 - Página não encontrada</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="Angelo Donada">
+    <meta name="description" content="Ops! A página que você está procurando não existe ou foi movida.">
+
+    <!--Favicons-->
+    <link rel="icon" href="assets/img/common/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/common/apple-touch-icon.png">
+
+    <!--Styles-->
+    <link href="assets/css/output.css" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-poppins bg-primary-700">
+
+    <!--Start of main-->
+    <main class="relative flex h-screen flex-col items-center justify-center overflow-hidden">
+
+        <!--Accessibility heading-->
+        <header class="sr-only">
+            <h1>Erro 404 - Página não encontrada</h1>
+        </header>
+
+        <!--404 heading-->
+        <div class="relative flex items-center justify-center pb-[50px]">
+            <span
+                class="z-10 text-[150px] font-black leading-none text-white md:text-[200px] xl:text-[300px]">404</span>
+
+            <!--Decorative shape-->
+            <img class="absolute h-[200px] w-[250px] object-contain md:h-[280px] md:w-[400px] xl:h-[410px] xl:w-[570px]"
+                src="assets/icons/shape.svg" alt="Forma geométrica abstrata" aria-hidden="true">
+        </div>
+
+        <!--Error message-->
+        <div
+            class="absolute bottom-[50px] flex w-full flex-col items-center justify-center gap-[20px] px-[20px] md:flex-row md:justify-between md:items-end md:px-[50px] xl:px-[100px]">
+
+            <!--Error text-->
+            <div class="flex flex-col items-center md:items-start">
+                <p class="text-[40px] font-semibold leading-tight text-accent xl:text-[48px]">Ooops!</p>
+                <p class="text-[16px] text-center text-white">Parece que a página não foi encontrada.</p>
+            </div>
+
+            <!--Back to home-->
+            <div class="flex items-center justify-center">
+                <a href="index.html"
+                    class="group flex w-full max-w-[200px] items-center justify-center gap-[12px] rounded-full bg-white p-[10px] text-[14px] font-medium text-primary-700 shadow-xl transition-all duration-300 hover:scale-[1.01]">
+                    <div
+                        class="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-primary-700 transition-colors duration-300">
+                        <i class="fa-regular fa-house text-[14px] text-white transition-colors duration-300"></i>
+                    </div>
+                    <span class="pr-2">Voltar ao início</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+    <!--End of main-->
+
+</body>
+
+</html>

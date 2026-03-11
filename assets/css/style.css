@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+/* Theme variables and custom keyframes */
+@theme {
+
+    /* Fonts */
+    --font-poppins: "Poppins", sans-serif;
+
+    /* Colors */
+    --color-primary: #02081C;
+    --color-primary-700: #010B2F;
+    --color-accent: #2784DB;
+
+    /* Scroll indicator animations */
+    @keyframes float-vertical {
+
+        0% {
+            opacity: 0;
+            transform: translateY(-8px);
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+    }
+
+    @keyframes float-horizontal {
+
+        0% {
+            opacity: 0;
+            transform: translateX(-8px);
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(8px);
+        }
+    }
+
+    /* Carousel scrolling animations */
+    @keyframes scroll-x-reverse {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes scroll-y-reverse {
+        0% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Soft pulse animation for interactive icons */
+    @keyframes pulse {
+
+        0% {
+            transform: scale(0.90);
+        }
+
+        70% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.90);
+        }
+    }
+}
+
+/* Radial gradient text effect */
+.text-gradient-radial {
+    background: radial-gradient(at center 120%, #ffffff 0%, var(--color-accent) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Scroll indicator animations */
+.animate-float-vertical {
+    animation: float-vertical 2s ease-in-out infinite;
+}
+
+.animate-float-horizontal {
+    animation: float-horizontal 2s ease-in-out infinite;
+}
+
+/* Carousel animations */
+.animate-scroll-x-reverse {
+    display: flex !important;
+    animation: scroll-x-reverse 20s linear infinite;
+    width: max-content;
+}
+
+.animate-scroll-y-reverse {
+    display: flex !important;
+    flex-direction: column;
+    animation: scroll-y-reverse 20s linear infinite;
+    height: max-content;
+}
+
+/* Icon pulse animation */
+.animate-soft-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Animation delay utilities */
+.animation-delay-300 {
+    animation-delay: 300ms;
+}
+
+.animation-delay-500 {
+    animation-delay: 500ms;
+}
+
+/* Disabled project links */
+.project-link-disabled {
+    cursor: not-allowed !important;
+}
+
+.project-link-disabled i {
+    cursor: not-allowed !important;
+}
