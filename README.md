@@ -9,6 +9,7 @@
 ## 🛠 Tecnologias Utilizadas
 
 - **Frontend:** HTML, Tailwind CSS, JavaScript
+- **Animações:** GSAP, ScrollTrigger
 - **Data Management:** JSON Dinâmico
 - **Design & Prototipagem:** Figma
 - **Outras ferramentas:** VS Code, GitHub
@@ -22,7 +23,15 @@
 - **Background Híbrido:** Lógica via JS para renderização de capas que aceitam tanto imagens quanto cores HEX, mantendo o overlay de legibilidade de forma automática.
 - **Tech Carousel Adaptativo:** Animação infinita que detecta o dispositivo do usuário para alternar entre rolagem horizontal (mobile) e vertical (desktop).
 - **SEO & Social Optimization:** Implementação completa de Meta Tags Open Graph e Schema.org para indexação profissional e previews otimizados em redes sociais.
-- **UX Mobile-First:** Menu lateral (Sidebar) com controle de estado, trava de scroll e botão _Back to Top_ com gatilho de visibilidade dinâmico.
+- **UX Mobile-First:** Menu lateral (Sidebar) com controle de estado, trava de scroll e botão Back to Top com gatilho de visibilidade dinâmico.
+- **Abertura Cinematográfica com GSAP:** Animações de entrada sincronizadas (Stagger) utilizando GSAP para letras, ícones e navegação, criando uma introdução fluida e profissional.
+- **Efeito de Cortina (Fixed Header):** Transição de scroll sofisticada onde o conteúdo principal sobrepõe o Header fixo, criando um efeito de camadas e profundidade.
+- **Bento Grid Layout:** Organização de informações (Sobre mim, Educação, Idiomas) através de um grid modular moderno, otimizando a hierarquia visual em qualquer tela.
+- **Interatividade de Interface (Hover Effects):** Micro-interações avançadas em cards de projetos e botões, incluindo zooms de imagem, gradientes dinâmicos e revelação de conteúdo.
+- **Central de Contatos e Social:** Integração estratégica de links para GitHub, LinkedIn, WhatsApp e E-mail, acompanhados de animações de pulso e transições de cor.
+- **Páginas Auxiliares Dedicadas:** Inclusão de galeria completa de projetos e página de Erro 404 personalizada, mantendo a retenção do usuário em todo o domínio.
+- **Responsividade Full-Stack:** Design adaptativo meticulosamente ajustado para uma experiência impecável desde dispositivos mobile compactos até monitores ultra-wide.
+- **Organização Modular de Ativos:** Estrutura de pastas limpa e escalável, separando scripts de animação, lógica de dados e estilos compilados com Tailwind CSS.
 
 <br>
 

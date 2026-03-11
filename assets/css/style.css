@@ -84,6 +84,19 @@
     }
 }
 
+/* GSAP */
+#split-portfolio span {
+    background-image: radial-gradient(at center 120%, #ffffff 0%, var(--color-accent) 60%);
+    background-size: var(--word-width, 400px) 100%;
+    background-position: var(--char-offset, 0px) 0%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
 /* Radial gradient text effect */
 .text-gradient-radial {
     background: radial-gradient(at center 120%, #ffffff 0%, var(--color-accent) 60%);

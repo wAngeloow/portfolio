@@ -39,6 +39,11 @@
     <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/img/common/apple-touch-icon.png">
 
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
+
     <!--Compiled Tailwind CSS-->
     <link href="assets/css/output.css" rel="stylesheet">
 
@@ -67,13 +72,12 @@
   ]
 }
 </script>
-
 </head>
 
 <body class="font-poppins bg-primary">
 
     <!--Start of header-->
-    <header class="relative flex justify-center w-full h-screen overflow-hidden bg-primary">
+    <header class="relative z-[1] flex justify-center w-full h-screen overflow-hidden bg-primary">
 
         <!--Mobile menu toggle button-->
         <button class="absolute z-50 left-[30px] top-[30px] md:hidden xl:left-[50px] xl:top-[50px]"
@@ -160,8 +164,9 @@
         <!--Intro text-->
         <div class="relative flex items-center justify-center">
 
-            <span class="pointer-events-none absolute select-none text-[70px] font-black uppercase text-accent opacity-[0.02]
-            md:text-[130px] lg:text-[160px] xl:text-[250px]" aria-hidden="true">
+            <span id="split-nome-fundo"
+                class="pointer-events-none absolute select-none text-[70px] font-black uppercase text-accent opacity-[0.02] md:text-[130px] lg:text-[160px] xl:text-[250px] whitespace-nowrap"
+                aria-hidden="true">
 
                 Angelo
 
@@ -169,11 +174,13 @@
 
             <div class="text-center">
 
-                <p class="text-[16px] font-semibold uppercase text-accent md:text-[24px] xl:text-[32px]">
+                <p id="split-subtitulo"
+                    class="text-[16px] font-semibold uppercase text-accent md:text-[24px] xl:text-[32px]">
                     Bem-vindo ao meu
                 </p>
 
-                <h1 class="text-[40px] font-extrabold uppercase text-gradient-radial md:text-[68px] xl:text-[96px]">
+                <h1 id="split-portfolio"
+                    class="text-[40px] font-extrabold uppercase text-gradient-radial md:text-[68px] xl:text-[96px]">
                     Portfólio
                 </h1>
 
@@ -208,7 +215,7 @@
     <!--End of header-->
 
     <!--Start of main-->
-    <main class="flex flex-col py-[30px] gap-[30px] xl:py-[50px] xl:gap-[50px]">
+    <main class="relative z-10 flex flex-col py-[30px] gap-[30px] xl:py-[50px] xl:gap-[50px] bg-primary">
 
         <!--Start of about me-->
         <section id="sobre-mim" aria-labelledby="about-title"
