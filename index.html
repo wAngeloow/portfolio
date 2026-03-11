@@ -41,11 +41,12 @@
 
     <!--GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-    <script src="assets/js/animations.js" defer></script>
 
     <!--Compiled Tailwind CSS-->
     <link href="assets/css/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
+
 
     <!--Font Awesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -80,7 +81,7 @@
     <header class="relative z-[1] flex justify-center w-full h-screen overflow-hidden bg-primary">
 
         <!--Mobile menu toggle button-->
-        <button class="absolute z-50 left-[30px] top-[30px] md:hidden xl:left-[50px] xl:top-[50px]"
+        <button class="opacity-0 absolute z-50 left-[30px] top-[30px] md:hidden xl:left-[50px] xl:top-[50px]"
             aria-label="Abrir menu" aria-controls="sidebar" aria-expanded="false">
 
             <i id="menu-icon" class="fa-solid fa-bars cursor-pointer text-[20px] text-white" aria-hidden="true">
@@ -90,7 +91,7 @@
 
         <!--Sidebar navigation-->
         <nav id="sidebar"
-            class="absolute z-40 top-0 left-[-90px] flex flex-col items-center justify-center w-[90px] h-screen bg-primary transition-all duration-300 md:left-0 md:bg-transparent"
+            class="opacity-0 absolute z-40 top-0 left-[-90px] flex flex-col items-center justify-center w-[90px] h-screen bg-primary transition-all duration-300 md:left-0 md:bg-transparent"
             aria-label="Navegação lateral">
 
             <ul class="flex items-center justify-center gap-[10px] whitespace-nowrap -rotate-90">
@@ -149,7 +150,7 @@
         <!--Contact button-->
         <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer"
             aria-label="Conversar no WhatsApp"
-            class="group absolute right-[20px] top-[20px] z-50 flex h-[45px] items-center rounded-full backdrop-blur-md px-[16px] font-semibold text-white transition-all duration-500 hover:bg-white hover:text-primary-700 hover:shadow-2xl xl:right-[50px] xl:top-[50px]">
+            class="opacity-0 group absolute right-[20px] top-[20px] z-50 flex h-[45px] items-center rounded-full backdrop-blur-md px-[16px] font-semibold text-white transition-all duration-500 hover:bg-white hover:text-primary-700 hover:shadow-2xl xl:right-[50px] xl:top-[50px]">
 
             <span
                 class="max-w-0 overflow-hidden whitespace-nowrap text-[14px] font-semibold transition-all duration-500 ease-in-out group-hover:mr-[10px] group-hover:max-w-[100px]">
@@ -165,7 +166,7 @@
         <div class="relative flex items-center justify-center">
 
             <span id="split-nome-fundo"
-                class="pointer-events-none absolute select-none text-[70px] font-black uppercase text-accent opacity-[0.02] md:text-[130px] lg:text-[160px] xl:text-[250px] whitespace-nowrap"
+                class="opacity-0  pointer-events-none absolute select-none text-[70px] font-black uppercase text-accent opacity-[0.02] md:text-[130px] lg:text-[160px] xl:text-[250px] whitespace-nowrap"
                 aria-hidden="true">
 
                 Angelo
@@ -175,12 +176,12 @@
             <div class="text-center">
 
                 <p id="split-subtitulo"
-                    class="text-[16px] font-semibold uppercase text-accent md:text-[24px] xl:text-[32px]">
+                    class="opacity-0 text-[16px] font-semibold uppercase text-accent md:text-[24px] xl:text-[32px]">
                     Bem-vindo ao meu
                 </p>
 
                 <h1 id="split-portfolio"
-                    class="text-[40px] font-extrabold uppercase text-gradient-radial md:text-[68px] xl:text-[96px]">
+                    class="opacity-0 text-[40px] font-extrabold uppercase text-gradient-radial md:text-[68px] xl:text-[96px]">
                     Portfólio
                 </h1>
 
@@ -189,7 +190,7 @@
         </div>
 
         <!--Scroll indicator-->
-        <div class="pointer-events-none absolute flex flex-col items-center gap-[10px] bottom-[20px] right-[20px]
+        <div class="opacity-0 pointer-events-none absolute flex flex-col items-center gap-[10px] bottom-[20px] right-[20px]
         xl:bottom-[50px] xl:right-[50px]" aria-hidden="true">
 
             <div class="w-[2px] h-[100px] bg-white animate-float-vertical"></div>
