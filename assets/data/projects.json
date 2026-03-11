@@ -29,7 +29,7 @@
   {
     "id": 3,
     "nome": "Pomodoro",
-    "descricao": "Este projeto é um Pomodoro projetado para ajudar na gestão do tempo de trabalho, estudo e descanso, ajudando o usuário a se manter focado por mais tempo.",
+    "descricao": "Ferramenta de produtividade desenvolvida com HTML, CSS e JS puro para otimizar ciclos de estudo. O projeto permite a personalização total dos tempos de foco e descanso, resolvendo problemas de concentração através de uma interface minimalista. Focado em UX, o timer garante autonomia ao usuário para adaptar a técnica Pomodoro ao seu próprio ritmo acadêmico.",
     "imagens": {
       "capa": "assets/img/works/pomodoro-capa.webp",
       "mockup": "assets/img/works/pomodoro-mockup.webp"
@@ -43,7 +43,7 @@
   {
     "id": 4,
     "nome": "Blog",
-    "descricao": "",
+    "descricao": "Protótipo de um portal de notícias com sistema avançado de filtros por nichos como cinema, moda e games. O design contempla fluxos completos de newsletter, páginas de artigos com metadados detalhados e um widget exclusivo de próximos eventos. Projetado no Figma, o foco foi a hierarquia visual e a navegabilidade em ecossistemas de conteúdo denso.",
     "imagens": {
       "capa": "assets/img/works/blog-capa.webp",
       "mockup": "assets/img/works/blog-mockup.webp"
@@ -57,7 +57,7 @@
   {
     "id": 5,
     "nome": "To-do list",
-    "descricao": "Sistema de lista de tarefas para ajudar a se organizar melhor.",
+    "descricao": "Gerenciador de tarefas desenvolvido com Vanilla JS para complementar o ecossistema de produtividade do Pomodoro. O sistema oferece CRUD completo, feedback sonoro ao concluir metas e contadores dinâmicos de progresso. Utiliza LocalStorage para persistência de dados, garantindo que as tarefas não sejam perdidas ao fechar o navegador.",
     "imagens": {
       "capa": "assets/img/works/to-do-list-capa.webp",
       "mockup": "assets/img/works/to-do-list-mockup.webp"
@@ -71,7 +71,7 @@
   {
     "id": 6,
     "nome": "Coldplay",
-    "descricao": "Página institucional dedicada à banda Coldplay, apresentando biografia, integrantes, discografia interativa e agenda de eventos.",
+    "descricao": "Landing page institucional desenvolvida como tributo à banda Coldplay, unindo biografia, integrantes e discografia completa. O projeto apresenta uma seção interativa de álbuns com integração direta para o Spotify, utilizando HTML, CSS e JavaScript puros. O foco principal foi a organização de layouts densos e a criação de uma experiência imersiva para fãs.",
     "imagens": {
       "capa": "assets/img/works/coldplay-capa.webp",
       "mockup": "assets/img/works/coldplay-mockup.webp"
@@ -85,7 +85,7 @@
   {
     "id": 7,
     "nome": "Login",
-    "descricao": "",
+    "descricao": "Protótipo de alta fidelidade focado no fluxo de autenticação e registro de usuários. O design explora uma estética moderna e minimalista, priorizando a clareza visual e a facilidade de navegação entre as telas de login e cadastro. Projetado no Figma, o foco foi a microinteração e o design centrado no usuário para fluxos de acesso simples.",
     "imagens": {
       "capa": "assets/img/works/login-capa.webp",
       "mockup": "assets/img/works/login-mockup.webp"
@@ -99,7 +99,7 @@
   {
     "id": 8,
     "nome": "Newsletter",
-    "descricao": "",
+    "descricao": "Protótipo de alta fidelidade para captura de leads, explorando a versatilidade entre temas claro e escuro. O design foca na conversão com um campo de inscrição otimizado, integração visual com redes sociais e uma hierarquia tipográfica precisa. Desenvolvido no Figma para validar microinterações e contraste em diferentes condições de iluminação.",
     "imagens": {
       "capa": "assets/img/works/newsletter-capa.webp",
       "mockup": "assets/img/works/newsletter-mockup.webp"
@@ -113,7 +113,7 @@
   {
     "id": 9,
     "nome": "Crochê",
-    "descricao": "Este é um site de e-commerce de crochê, onde são apresentados diversos tipos de crochês organizados em diferentes categorias. Vale ressaltar que todas as fotos, medidas e valores apresentados são totalmente fictícios, sendo utilizados exclusivamente para fins de portfolio e demonstração. Não são representações reais de produtos ou preços.",
+    "descricao": "Plataforma de catálogo interativo desenvolvida com Bootstrap e JavaScript para um negócio de artesanato. O projeto apresenta navegação dinâmica entre categorias sem recarregamento de página, garantindo fluidez e foco na experiência visual do usuário. Conta com seção de FAQ e uma vitrine personalizada focada na conversão e detalhamento de produtos.",
     "imagens": {
       "capa": "assets/img/works/croche-capa.webp",
       "mockup": "assets/img/works/croche-mockup.webp"
@@ -127,7 +127,7 @@
   {
     "id": 10,
     "nome": "Barber",
-    "descricao": "Este projeto foi desenvolvido para simular o site de uma barbearia fictícia, com o objetivo de mostrar minhas habilidades de desenvolvimento web. As imagens e nomes foram retirados do Google, sendo usados apenas para fins ilustrativos e não representando um negócio real. O foco principal é na criação de um site responsivo e dinâmico, adequado para portfólio.",
+    "descricao": "Plataforma completa para barbearias com sistema de agendamento integrado via modal e navegação por ancoragem. O projeto utiliza Bootstrap para garantir responsividade, apresentando catálogo de serviços com preços, cards de equipe com redes sociais e integração com Google Maps. Focado em conversão, centraliza todas as informações de contato e localização de forma intuitiva.",
     "imagens": {
       "capa": "assets/img/works/barber-capa.webp",
       "mockup": "assets/img/works/barber-mockup.webp"
