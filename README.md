@@ -61,7 +61,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 </div>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ad94f57e-ac34-4ada-860d-b7b9a898760a" alt="Demonstração do portfólio">
+  <img src="https://github.com/user-attachments/assets/73642097-d2ce-4b55-aaf1-ad45ba8c8c1c" alt="Demonstração do portfólio">
 </div>
 
 <br>
