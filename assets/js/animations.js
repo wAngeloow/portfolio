@@ -103,35 +103,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 "-=1"
             )
 
-            // Sidebar and header UI elements animation
-            .fromTo(
-                [
-                    "#sidebar",
-                    "header button[aria-controls='sidebar']",
-                    "header a[href*='wa.me']",
-                    "header .pointer-events-none.absolute.flex-col"
-                ],
+        // Sidebar and header UI elements animation
+        tl.fromTo([
+            "#sidebar",
+            "header button[aria-controls='sidebar']",
+            "header a[href*='wa.me']"
+        ],
+            {
+                opacity: 0,
+                x: (i, target) => {
+                    if (target.id === 'sidebar' || target.getAttribute('aria-controls') === 'sidebar') return -80;
+                    if (target.tagName === 'A') return 80;
+                    return 0;
+                }
+            },
+            {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+                stagger: 0,
+                ease: "power4.out",
+                clearProps: "transform",
+                onComplete: function () {
+                    gsap.set(["#sidebar", "header a[href*='wa.me']", "header button[aria-controls='sidebar']"], {
+                        opacity: 1,
+                        visibility: "visible"
+                    });
+                    const contactBtn = document.querySelector("header a[href*='wa.me']");
+                    if (contactBtn) contactBtn.classList.add('transition-all', 'duration-500');
+                }
+            }, "-=0.6")
+
+            // Scroll indicator animation
+            .fromTo("header .pointer-events-none.absolute.flex-col",
                 {
                     opacity: 0,
-                    x: (i, target) => (target.id === 'sidebar' || target.tagName === 'BUTTON' ? -50 : (target.tagName === 'A' ? 50 : 0))
+                    y: 40
                 },
                 {
                     opacity: 1,
-                    x: 100,
-                    duration: 0.5,
-                    ease: "power4.out",
-                    clearProps: "transform",
-
-                    // Ensure WhatsApp button stays visible
-                    onComplete: function () {
-                        gsap.set("header a[href*='wa.me']", {
-                            opacity: 1,
-                            visibility: "visible"
-                        });
-                    }
-                },
-                "-=0.6"
-            );
+                    y: 0,
+                    duration: 1,
+                    ease: "power3.out",
+                    clearProps: "transform"
+                }, "-=0.4");
 
         // Pin header while scrolling into main
         ScrollTrigger.create({
