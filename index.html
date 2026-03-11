@@ -144,21 +144,17 @@
 
         <!--Contact button-->
         <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer"
-            aria-label="Conversar no WhatsApp" class="absolute z-50 top-[30px] right-[30px] overflow-hidden text-[14px]
-        md:flex md:gap-[5px] md:rounded-full md:bg-white md:px-[15px] md:py-[10px] md:font-semibold
-        xl:top-[50px] xl:right-[50px]
+            aria-label="Conversar no WhatsApp"
+            class="group absolute right-[20px] top-[20px] z-50 flex h-[45px] items-center rounded-full backdrop-blur-md px-[16px] font-semibold text-white transition-all duration-500 hover:bg-white hover:text-primary-700 hover:shadow-2xl xl:right-[50px] xl:top-[50px]">
 
-        after:absolute after:left-0 after:top-0 after:w-0 after:h-full after:bg-accent after:transition-all after:duration-300
-        hover:after:w-full">
-
-            <p class="relative z-10 hidden transition-colors duration-300 md:flex">
+            <span
+                class="max-w-0 overflow-hidden whitespace-nowrap text-[14px] font-semibold transition-all duration-500 ease-in-out group-hover:mr-[10px] group-hover:max-w-[100px]">
                 Conversar
-            </p>
+            </span>
 
-            <i class="fa-solid fa-comment-dots relative z-10 animate-soft-pulse text-[20px] text-white transition-colors duration-300 md:text-primary"
+            <i class="fa-solid fa-comment-dots relative z-10 animate-soft-pulse text-[20px] transition-colors duration-300"
                 aria-hidden="true">
             </i>
-
         </a>
 
         <!--Intro text-->
@@ -327,7 +323,7 @@
                             </div>
 
                             <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer"
-                                aria-label="Iniciar conversa no WhatsApp" class="group relative flex items-center justify-center w-[140px] h-[35px]
+                                aria-label="Iniciar conversa no WhatsApp" class="group relative flex items-center justify-center w-[140px] h-[36px]
                         overflow-hidden rounded-[15px] border border-white
                         text-[12px] font-semibold text-white
                         transition-all duration-300
@@ -383,18 +379,6 @@
 
                                 <li
                                     class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
-                                    <a href="https://dribbble.com/angelo-donada" target="_blank"
-                                        rel="noopener noreferrer" aria-label="Perfil no Dribbble"
-                                        class="flex items-center justify-center w-full h-full">
-
-                                        <i
-                                            class="fa-brands fa-dribbble text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
-
-                                    </a>
-                                </li>
-
-                                <li
-                                    class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
                                     <a href="mailto:angelodonada@gmail.com" aria-label="Enviar email"
                                         class="flex items-center justify-center w-full h-full">
 
@@ -403,10 +387,6 @@
 
                                     </a>
                                 </li>
-
-                            </ul>
-
-                            <ul class="flex gap-[15.33px] md:gap-[7px]">
 
                                 <li
                                     class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
@@ -420,6 +400,10 @@
                                     </a>
                                 </li>
 
+                            </ul>
+
+                            <ul class="flex gap-[15.33px] md:gap-[7px]">
+
                                 <li
                                     class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
                                     <a href="https://www.linkedin.com/in/angelodonada/" target="_blank"
@@ -428,6 +412,18 @@
 
                                         <i
                                             class="fa-brands fa-linkedin-in text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
+
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="group flex items-center justify-center w-[76px] h-[76px] rounded-[10px] bg-primary-700 md:w-[60px] md:h-[60px]">
+                                    <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Conversar no WhatsApp"
+                                        class="flex items-center justify-center w-full h-full">
+
+                                        <i
+                                            class="fa-brands fa-whatsapp text-[25px] text-white transition-all duration-500 group-hover:scale-110"></i>
 
                                     </a>
                                 </li>
@@ -618,13 +614,24 @@
                         para elevar o nível do seu próximo projeto.
                     </p>
                 </header>
-                <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-full bg-white px-[20px] py-[10px] text-[14px] font-semibold text-primary-700 transition-all duration-300
-                after:absolute after:left-0 after:top-0 after:h-full after:w-0 after:bg-accent after:transition-all after:duration-300
-                hover:after:w-full">
-                    <span class="relative z-10 transition-colors duration-300">
+                <div class="w-full flex justify-center md:justify-start">
+                    <a href="https://wa.me/5551984172664" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center rounded-full bg-white
+            px-[12px] py-[6px]
+            text-[12px] font-semibold text-primary-700
+            transition-all duration-500
+            md:px-[16px] md:py-[8px] md:text-[14px]
+            xl:px-[20px] xl:py-[10px]
+            hover:bg-gray-100 hover:shadow-lg">
+
                         Enviar mensagem
-                    </span>
-                </a>
+
+                        <i class="fa-solid fa-arrow-right
+                opacity-0 max-w-0 -translate-x-2
+                transition-all duration-500 ease-in-out
+                group-hover:opacity-100 group-hover:max-w-[20px] group-hover:translate-x-2">
+                        </i>
+                    </a>
+                </div>
             </div>
         </section>
 
