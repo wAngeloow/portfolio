@@ -32,49 +32,39 @@
         rel="stylesheet">
 </head>
 
-<body class="font-poppins bg-primary-700">
+<body class="bg-primary-700 font-poppins">
 
     <!--Start of main-->
-    <main class="relative flex h-screen flex-col items-center justify-center overflow-hidden">
+    <main class="relative flex justify-center overflow-hidden">
 
-        <!--Accessibility heading-->
-        <header class="sr-only">
-            <h1>Erro 404 - Página não encontrada</h1>
-        </header>
+        <!--Centered content wrapper-->
+        <div class="flex h-screen w-full flex-col items-center justify-center">
+            <h1 class="text-[150px] font-extrabold text-accent/80 md:text-[200px]">404</h1>
 
-        <!--404 heading-->
-        <div class="relative flex items-center justify-center pb-[50px]">
-            <span
-                class="z-10 text-[150px] font-black leading-none text-white md:text-[200px] xl:text-[300px]">404</span>
+            <!--Error message content-->
+            <div class="flex flex-col items-center gap-[30px]">
+                <div>
+                    <h2 class="text-center text-[48px] font-semibold text-accent">Ooops!</h2>
+                    <p class="text-center text-[16px] text-white">Parece que a página não foi encontrada.</p>
+                </div>
 
-            <!--Decorative shape-->
-            <img class="absolute h-[200px] w-[250px] object-contain md:h-[280px] md:w-[400px] xl:h-[410px] xl:w-[570px]"
-                src="assets/icons/shape.svg" alt="Forma geométrica abstrata" aria-hidden="true">
-        </div>
-
-        <!--Error message-->
-        <div
-            class="absolute bottom-[50px] flex w-full flex-col items-center justify-center gap-[20px] px-[20px] md:flex-row md:justify-between md:items-end md:px-[50px] xl:px-[100px]">
-
-            <!--Error text-->
-            <div class="flex flex-col items-center md:items-start">
-                <p class="text-[40px] font-semibold leading-tight text-accent xl:text-[48px]">Ooops!</p>
-                <p class="text-[16px] text-center text-white">Parece que a página não foi encontrada.</p>
-            </div>
-
-            <!--Back to home-->
-            <div class="flex items-center justify-center">
-                <a href="index.html"
-                    class="group flex w-full max-w-[200px] items-center justify-center gap-[12px] rounded-full bg-white p-[10px] text-[14px] font-medium text-primary-700 shadow-xl transition-all duration-300 hover:scale-[1.01]">
-                    <div
-                        class="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-primary-700 transition-colors duration-300">
-                        <i class="fa-regular fa-house text-[14px] text-white transition-colors duration-300"></i>
-                    </div>
-                    <span class="pr-2">Voltar ao início</span>
+                <!--Return to homepage button-->
+                <a href="index.html" class="flex h-[41px] w-[150px] items-center justify-center rounded-full border-[1px] border-white text-[14px] font-semibold text-white 
+          transition-all duration-300 ease-in-out 
+          hover:bg-white hover:text-primary-700">
+                    Voltar ao início
                 </a>
             </div>
-
         </div>
+
+        <!--Decorative background glow-->
+        <div class="pointer-events-none absolute bottom-[-150px] z-[1] h-[300px] w-[300px] rounded-full bg-accent blur-[200px]
+
+        md:bottom-[-200px] md:h-[400px] md:w-[400px] md:blur-[250px]
+
+        xl:bottom-[-300px] xl:h-[500px] xl:w-[500px] xl:blur-[350px]">
+        </div>
+
     </main>
     <!--End of main-->
 
